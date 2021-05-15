@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选择器</title>
+  <style>
+    /* 分组选择器 */
+    /* h1,
+    h2,
+    h3 {} */
+
+    /* 通配符：选中所有可见元素 */
+    * {
+      margin: 0pt;
+    }
+
+    h1 {
+      color: aquamarine;
+    }
+
+    /* id选择器：在一个 html 文件中，id 是唯一的，一个 id 只能给一个元素使用 */
+    #aa {
+      color: blue;
+    }
+
+    /* 标签选择器  */
+    li {
+      color: blueviolet;
+    }
+
+    /* 类选择器：一个元素可以有多个类，多个类之间用空格分开 */
+    /* .cc {
+      color: chocolate;
+    }
+
+    .dd {
+      font-style: italic;
+    } */
+    /* id+ 关系（后代选择器,子代） +  标签 */
+    /* #ul2 li { */
+    /* color 属性会被继承 */
+    /* color: cornflowerblue; */
+    /* } */
+
+    /* 子代：只选中是儿子关系的那一级，孙子以后不会被选中 */
+    #ul2>li {
+      /* color 属性会被继承 */
+      color: cornflowerblue;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" value="123456">
+  <h1 id="aa">11111</h1>
+  <div>2222</div>
+  <div>3333</div>
+  <!-- <h1 id="bb">22222</h1> -->
+
+  <ul>
+    <li class="cc">001</li>
+    <li class="cc">002</li>
+    <li class="cc dd">003</li>
+    <li class="dd">004</li>
+    <li class="dd">005</li>
+  </ul>
+  <ul id="ul2">
+    <li>000001</li>
+    <li>
+      <ul>
+        <li>000004</li>
+        <li>000005</li>
+      </ul>
+    </li>
+    <li>000003</li>
+    <li>000004</li>
+    <li>000005</li>
+  </ul>
+</body>
+
+</html>
