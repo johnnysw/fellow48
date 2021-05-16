@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 当选择器相同，属性重复的时候，后面的覆盖前面的 */
+    #hh1 {
+      background: red;
+      color: royalblue;
+    }
+
+    h1.aa {
+      background: #bc8f8f !important;
+      color: green !important;
+    }
+
+    * {
+
+      font-size: 50px;
+      /* border: 1px solid red; */
+
+      /* text-decoration: khaki underline; */
+      /* padding-left: 60px; */
+      padding-left: inherit;
+    }
+
+    li {
+      /* font-size: inherit; */
+      /* border:inherit; */
+      padding-left: unset;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <h1 class="aa" id="hh1" >好 11111</h1>
+  <h1 class="aa" id="hh1" >好 11111</h1> -->
+  <div id="div1">
+    99999
+    <ul>
+      <li>0001</li>
+      <li>0002</li>
+      <li>0003</li>
+    </ul>
+  </div>
+</body>
+
+</html>

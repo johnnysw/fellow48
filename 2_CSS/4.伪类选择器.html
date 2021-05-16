@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #ul1 :last-child {
+      /* background: cadetblue; */
+      /* border: 5px red solid; */
+    }
+
+    li:nth-child(2n+1) {
+      /* color: red; */
+    }
+
+    /* 伪元素（对象）选择器 */
+    /* #ul1 ::after {
+      content: '9999999';
+    } */
+    /* #ul1::after {
+      content: '😜';
+    } */
+
+    li{
+      list-style: none;
+      float: left;
+      width: 50px;      
+    }
+    li::after{
+      content: '|';
+    }
+    li:last-child::after{
+      content: none;
+    }
+    /* li{
+      color: red;
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- <ul id="ul1">
+    <li>0001</li>
+    <li>0002 <span>111</span></li>
+    <li>0003
+      <span>222</span>
+      <span>333</span>
+      <b>444</b>
+    </li>
+    <li>0004</li>
+    <li>0005</li>
+  </ul> -->
+
+  <ul>
+    <li>11111</li>
+    <li>11112</li>
+    <li>11113</li>
+    <li>11114</li>
+    <li>11115</li>
+  </ul>
+</body>
+
+</html>

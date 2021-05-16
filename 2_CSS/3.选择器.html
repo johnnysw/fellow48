@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 相邻选择器会选中紧挨着的下面的那个元素 */
+    /* h1+h5 {
+      color: aqua;
+    } */
+
+    /* 往下找兄弟 */
+    h1~h5 {
+      color: brown;
+    }
+
+    input[value] {
+      background: #000;
+    }
+
+    #div1 :hover {
+      /* color: brown; */
+      border: 5px solid red;
+    }
+
+    h5.aa {
+      background: burlywood;
+    }
+    input:focus{
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="div1">
+    12345678
+    <h5 class="aa">55555</h5>
+    <h1>这是个h1</h1>
+    <h4>2345678</h4>
+    <h5 class="aa">66666</h5>
+    <h5>77777</h5>
+  </div>
+
+
+
+  <input type="text" value="name">
+  <input type="text" value="age">
+  <input type="text">
+
+  <a href="">跳到首页</a>
+  <button>点我</button>
+
+
+
+</body>
+
+</html>
