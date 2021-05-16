@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        #a {
+            background: #f00;
+        }
+
+        #b {
+            background: #0f0;
+            /* 相对定位：相对于自己的初始位置,空间不释放 */
+            /* 绝对定位：相对于最近的已定位的祖先元素,如果找不到最近定位的祖先元素，相对于html根元素，空间释放 */
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        #c {
+            background: #00f;
+        }
+
+        #outer{
+            width: 800px;
+            height: 600px;
+            background: #ccc;
+            /* margin-left: 50px;
+            margin-top: 50px; */
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+    </div>
+</body>
+
+</html>
