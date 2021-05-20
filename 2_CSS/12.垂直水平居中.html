@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #outer {
+      width: 200px;
+      height: 200px;
+      background: #000;
+      position: relative;
+    }
+
+    #inner {
+      width: 50px;
+      height: 50px;
+      background: lightcoral;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      /* margin: 0 auto; */
+      /* margin-top: -25px; */
+      transform: translate(-50%, -50%);
+      /* 水平方向居中 */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="outer">
+    <div id="inner"></div>
+  </div>
+</body>
+
+</html>

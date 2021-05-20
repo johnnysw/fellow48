@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box1 {
+      border: 1px solid #000;
+      height: 300px;
+      width: 150px;
+
+      /* 让该元素成为一个弹性盒子（弹性容器） */
+      display: flex;
+
+
+      /* 主轴：决定弹性项目在弹性盒子里面的排列方向（主轴方向默认水平向右） */
+      flex-direction: row;
+      /* 交叉轴：决定了弹性项目换行的方向 */
+      flex-wrap: wrap;
+
+      /* 决定了弹性项目在弹性盒子里面在交叉轴方向的分布方式 */
+      align-items: center;
+
+      /* 决定弹性项目距在主轴方向的分布方式 */
+      justify-content: space-between;
+
+      /* 决定了主轴的分布方式（只有一条主轴的时候没用，只有有多条主轴的时候才有效果） */
+      align-content: space-between;
+
+    }
+
+    /* 弹性容器里面的元素（亲儿子这一代），叫做弹性项目 */
+    /* 当不换行主轴方向放不下所有弹性项目的时候，弹性项目会被挤压（挤压 content 区域，别的区域不挤压），挤压到内容大小为极限 */
+    .item {
+      width: 40px;
+      height: 50px;
+      /* padding: 10px; */
+      /* float: left; */
+    }
+
+    #div1 {
+      background: rgb(182, 107, 107);
+    }
+
+    #div2 {
+      /* font-size: 40px;
+      padding: 20px 0; */
+      /* width: 50px; */
+      height: 80px;
+      background: rgb(150, 182, 107);
+    }
+
+    #div3 {
+      /* align-self: start; */
+      background: rgb(107, 131, 182);
+    }
+
+    #div4 {
+      background: rgb(182, 107, 160);
+    }
+
+    #div5 {
+      background: rgb(56, 155, 89);
+    }
+
+    #div6 {
+      background: rgb(106, 151, 194);
+    }
+
+    #box2 {
+      background: #000;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box1">
+    <div class="item" id="div1">1</div>
+    <div class="item" id="div2">2</div>
+    <div class="item" id="div3">3</div>
+    <div class="item" id="div4">4</div>
+    <div class="item" id="div5">5</div>
+    <div class="item" id="div6">6</div>
+  </div>
+  <!-- <div id="box2"></div> -->
+</body>
+
+</html>
